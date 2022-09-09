@@ -5,12 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
-
 
     <!-- font aweosome -->
     <script src="https://kit.fontawesome.com/ff3c91d27a.js" crossorigin="anonymous"></script>
@@ -27,9 +25,7 @@
                 <img src="images/lo.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
                 Tech-World
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,8 +37,7 @@
                         <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Dropdown
                         </a>
                         <ul class="dropdown-menu">
@@ -113,8 +108,7 @@
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                        <div class="service-card card h-100 collapsed" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <div class="service-card card h-100 collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                             <div class="card-body py-3">
                                 <div class="text-center fs-1">
                                     <i class="fa-solid fa-globe"></i>
@@ -127,8 +121,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="service-card card h-100 collapsed" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <div class="service-card card h-100 collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                             <div class="card-body py-3">
                                 <div class="text-center fs-1">
                                     <i class="fa-solid fa-pen-to-square"></i></i>
@@ -141,9 +134,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="service-card card h-100 collapsed" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
+                        <div class="service-card card h-100 collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                             <div class="card-body py-3">
                                 <div class="text-center fs-1">
                                     <i class="fa-solid fa-mobile-screen-button "></i> <br>
@@ -162,8 +153,7 @@
                 <div class="accordion accordion-flush" id="accordionFlushExample">
 
                     <!-- web development -->
-                    <div class="sub-type my-3 py-5 accordion-collapse collapse accordion-body" id="flush-collapseOne"
-                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="sub-type my-3 py-5 accordion-collapse collapse accordion-body" id="flush-collapseOne" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                         <div class=" row row-cols-1 row-cols-md-4 g-3">
                             <div class="col">
                                 <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#wd">
@@ -267,8 +257,7 @@
                     <!--  -->
 
                     <!-- Graphic Design -->
-                    <div class="sub-type my-3 py-5 accordion-collapse collapse accordion-body" id="flush-collapseTwo"
-                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="sub-type my-3 py-5 accordion-collapse collapse accordion-body" id="flush-collapseTwo" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                         <div class=" row row-cols-1 row-cols-md-4 g-3">
                             <div class="col">
                                 <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#gd">
@@ -373,8 +362,7 @@
                     <!--  -->
 
                     <!-- Mobile App Development -->
-                    <div class="sub-type my-3 py-5 accordion-collapse collapse accordion-body" id="flush-collapseThree"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="sub-type my-3 py-5 accordion-collapse collapse accordion-body" id="flush-collapseThree" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                         <div class=" row row-cols-1 row-cols-md-3 g-3">
                             <div class="col mx-auto">
                                 <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#ad">
@@ -606,8 +594,7 @@
                         </select>
                         <!-- <input type="hidden" class="form-control" name="service" value="web development" required> -->
                         <label for="" class="form-label float-start">About Project</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Project Details"
-                            name="project-info" rows="3" required></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Project Details" name="project-info" rows="3" required></textarea>
                         <div class="modal-footer">
                             <input class="btn btn-primary" type="submit" name="submit" value="Submit">
                         </div>
@@ -636,8 +623,7 @@
                         <input type="email" class="form-control" name="email" placeholder="Enter Your Email" required>
                         <input type="hidden" class="form-control" name="service" value="web development" required>
                         <label for="" class="form-label float-start">About Project</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Project Details"
-                            name="project-info" rows="3" required></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Project Details" name="project-info" rows="3" required></textarea>
                         <div class="modal-footer">
                             <input class="btn btn-primary" type="submit" name="submit" value="Submit">
                         </div>
@@ -666,8 +652,7 @@
                         <input type="email" class="form-control" name="email" placeholder="Enter Your Email" required>
                         <input type="hidden" class="form-control" name="service" value="graphic designing" required>
                         <label for="" class="form-label float-start">About Design</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Design Details"
-                            name="project-info" rows="3" required></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Design Details" name="project-info" rows="3" required></textarea>
                         <div class="modal-footer">
                             <input class="btn btn-primary" type="submit" name="submit" value="Submit">
                         </div>
@@ -696,8 +681,7 @@
                         <input type="email" class="form-control" name="email" placeholder="Enter Your Email" required>
                         <input type="hidden" class="form-control" name="service" value="app development" required>
                         <label for="" class="form-label float-start">About Project</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Project Details"
-                            name="project-info" rows="3" required></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Project Details" name="project-info" rows="3" required></textarea>
                         <div class="modal-footer">
                             <input class="btn btn-primary" type="submit" name="submit" value="Submit">
                         </div>
@@ -728,32 +712,27 @@
                             <div class="row g-2 mb-3">
                                 <div class="col-md">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="floatingInputGrid"
-                                            placeholder="Name" required>
+                                        <input type="text" class="form-control" id="floatingInputGrid" placeholder="Name" required>
                                         <label for="floatingInputGrid">First Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="floatingInputGrid"
-                                            placeholder="Name" required>
+                                        <input type="text" class="form-control" id="floatingInputGrid" placeholder="Name" required>
                                         <label for="floatingInputGrid">Last Name</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="tel" class="form-control" id="floatingPassword" placeholder="Phone No"
-                                    required>
+                                <input type="tel" class="form-control" id="floatingPassword" placeholder="Phone No" required>
                                 <label for="floatingPassword">Phone No</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="Email"
-                                    required>
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Email" required>
                                 <label for="floatingInput">Email Address</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                    style="height: 100px" required></textarea>
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
                                 <label for="floatingTextarea2">Message</label>
                             </div>
                             <div class="d-grid gap-2 mb-3">
@@ -775,28 +754,22 @@
             <!-- Section: Social media -->
             <section class="mb-4">
                 <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
 
                 <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
                 <!-- Google -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fab fa-google"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
 
                 <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 
                 <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
 
                 <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                        class="fab fa-github"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
             </section>
             <!-- Section: Social media -->
 
@@ -854,9 +827,7 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>
