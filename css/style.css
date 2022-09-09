@@ -1,0 +1,213 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F4F6F7;
+}
+
+.heading {
+    text-align: center;
+    padding: 0px 0px;
+    font-weight: bold;
+    color: #1C2833;
+
+}
+
+hr {
+    height: 5px;
+    width: 100px;
+}
+
+/* Home */
+.navbar {
+    z-index: 90;
+}
+
+#home {
+    font-family: 'Raleway', sans-serif;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.723), rgba(0, 0, 0, 0.723)), url("../images/bg2.jpg"); */
+    background: url("../images/bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+.home-info {
+    padding-top: 8%;
+}
+
+#home h1 {
+    font-size: 50px;
+    color: skyblue;
+}
+
+#home h3 {
+    font-size: 30px;
+}
+
+#home button {
+    border: none;
+    font-size: 20px;
+}
+
+/* About Us */
+.about-page {
+    padding: 20px 100px;
+}
+
+.about-video {
+    width: 40%;
+}
+
+.about-video video {
+    width: 100%;
+    border-radius: 3%;
+}
+
+.about-info {
+    width: 60%;
+}
+
+.about-info p {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* service */
+.service {
+    background-color: #212F3D;
+}
+
+.service-card {
+    cursor: pointer;
+    background-color: #F7F9F9;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.service-card:hover {
+    background-color: rgba(27, 208, 27, 0.858);
+    color: white !important;
+}
+
+.sub-type {
+    transition: 0.0ms;
+}
+
+.service-sub-card {
+    cursor: pointer;
+}
+
+.service-sub-card:hover i {
+    color: blue;
+    padding: 5px;
+}
+
+/* feature */
+.feature {
+    background-color: white;
+}
+
+.feature-card {
+    border: none;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.feature-card i {
+    background-color: darkgreen;
+    color: white;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+
+/* sector */
+.s-card {
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+
+.s-card img {
+    border-radius: 5%;
+}
+
+.s-card:hover {
+    background-color: rgb(255, 28, 28);
+    color: white;
+}
+
+.s-card-footer2 {
+    display: none;
+}
+
+.s-card:hover .s-card-footer2 {
+    display: block;
+}
+
+.s-card:hover .s-card-footer1 {
+    display: none;
+}
+
+/* contact us page */
+.contact-img img {
+    width: 100%;
+}
+
+.cform {
+    width: 50%;
+}
+
+.contact-page {
+    width: 80%;
+}
+
+@media only screen and (max-width: 1075px) {
+
+    /* About Us */
+    .about-page {
+        padding: 10px 0px;
+    }
+
+    .about-video {
+        width: 100%;
+    }
+
+    .about-info {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .about-info p {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    /* contact us */
+    .contact-info {
+        display: none;
+    }
+
+    .cform {
+        width: 90%;
+    }
+
+    .contact-page {
+        width: 100%;
+    }
+
+}
