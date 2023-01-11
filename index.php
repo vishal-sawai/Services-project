@@ -62,8 +62,8 @@
                 <h3 class="text-center">Make Your Website</h3>
                 <div class="d-grid gap-2 col-3 mx-auto">
                     <button class="btn btn-warning" type="button" data-bs-toggle="modal" href="#en">Enquire Now</button>
-                </div>
 
+                </div>
             </div>
         </div>
     </div>
@@ -94,6 +94,8 @@
                         aperiam at suscipit autem ut obcaecati, possimus, voluptatum doloremque! Consequatur cum
                         molestiae
                         quaerat ex ducimus beatae doloremque.
+
+
                     </p>
                 </div>
             </div>
@@ -156,7 +158,7 @@
                     <div class="sub-type my-3 py-5 accordion-collapse collapse accordion-body" id="flush-collapseOne" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                         <div class=" row row-cols-1 row-cols-md-4 g-3">
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#wd">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('web development','customize')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-code"></i> <br>
@@ -168,7 +170,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#wd">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('web development','bootstrap')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-brands fa-bootstrap"></i> <br>
@@ -180,7 +182,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#wd">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('web development','wordpress')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-brands fa-wordpress"></i><br>
@@ -192,7 +194,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#wd">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('web development','shopify')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-brands fa-shopify"></i> <br>
@@ -204,7 +206,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#wd">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('web development','Dynamic And Static')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-globe"></i><br>
@@ -216,7 +218,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#wd">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('web development','Template Editing')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-file-pen"></i>
@@ -229,7 +231,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#wd">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('web development','Bug Fixing')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-bug"></i> <br>
@@ -241,7 +243,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#wd">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('web development','Content upload')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-upload"></i><br>
@@ -260,7 +262,7 @@
                     <div class="sub-type my-3 py-5 accordion-collapse collapse accordion-body" id="flush-collapseTwo" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                         <div class=" row row-cols-1 row-cols-md-4 g-3">
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#gd">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Graphic Design','Resume')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-file"></i><br>
@@ -272,7 +274,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#gd">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Graphic Design','Social media post')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-hashtag"></i> <br>
@@ -284,7 +286,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#gd">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Graphic Design','Advertising post')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-rectangle-ad"></i><br>
@@ -296,7 +298,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#gd">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Graphic Design','Poster')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-sheet-plastic"></i> <br>
@@ -308,7 +310,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#gd">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Graphic Design','YouTube Thumbnail')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-brands fa-youtube"></i><br>
@@ -320,7 +322,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#gd">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Graphic Design','Logo')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-brands fa-square-pied-piper"></i>
@@ -333,7 +335,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#gd">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Graphic Design','Business Card')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-address-card"></i>
@@ -346,7 +348,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#gd">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Graphic Design','Other')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-ellipsis"></i><br>
@@ -365,7 +367,7 @@
                     <div class="sub-type my-3 py-5 accordion-collapse collapse accordion-body" id="flush-collapseThree" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                         <div class=" row row-cols-1 row-cols-md-3 g-3">
                             <div class="col mx-auto">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#ad">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Mobile App Development','Android')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-brands fa-android"></i><br>
@@ -377,7 +379,7 @@
                                 </div>
                             </div>
                             <div class="col mx-auto">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#ad">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Mobile App Development','Hybrid apps')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-brands fa-react"></i><br>
@@ -389,7 +391,7 @@
                                 </div>
                             </div>
                             <div class="col mx-auto">
-                                <div class="bg-light card h-100 service-sub-card" data-bs-toggle="modal" href="#ad">
+                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Mobile App Development','ios')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-brands fa-apple"></i><br>
@@ -477,7 +479,7 @@
             <div>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                        <div class="card s-card" data-bs-toggle="modal" href="#wd">
+                        <div class="card s-card" onclick="formdata('Web Development','E-commerce website')" data-bs-toggle="modal" href="#stm">
                             <img src="images/service/shoping.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">E-Commerce Website</h5>
@@ -486,7 +488,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card s-card" data-bs-toggle="modal" href="#wd">
+                        <div class="card s-card" onclick="formdata('Web Development','Education and learning website')" data-bs-toggle="modal" href="#stm">
                             <img src="images/service/eductional.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">Education & Learning Website</h5>
@@ -496,7 +498,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card s-card" data-bs-toggle="modal" href="#wd">
+                        <div class="card s-card" onclick="formdata('Web Development','Business Website')" data-bs-toggle="modal" href="#stm">
                             <img src="images/service/business.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">Business Website</h5>
@@ -506,7 +508,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card s-card" data-bs-toggle="modal" href="#wd">
+                        <div class="card s-card" onclick="formdata('Web Development','Event Website')" data-bs-toggle="modal" href="#stm">
                             <img src="images/service/event.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">Event Website</h5>
@@ -516,7 +518,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card s-card" data-bs-toggle="modal" href="#wd">
+                        <div class="card s-card" onclick="formdata('Web Development','Bloging Website')" data-bs-toggle="modal" href="#stm">
                             <img src="images/service/blogweb.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">Bloging Website</h5>
@@ -526,7 +528,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card s-card" data-bs-toggle="modal" href="#wd">
+                        <div class="card s-card" onclick="formdata('Web Development','Portfolio Website')" data-bs-toggle="modal" href="#stm">
                             <img src="images/service/portfolio.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">Portfolio Website</h5>
@@ -536,7 +538,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card s-card" data-bs-toggle="modal" href="#wd">
+                        <div class="card s-card" onclick="formdata('Web Development','Personal website')" data-bs-toggle="modal" href="#stm">
                             <img src="images/service/personal.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">Personal Website</h5>
@@ -545,7 +547,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card s-card" data-bs-toggle="modal" href="#wd">
+                        <div class="card s-card" onclick="formdata('Web Development','Information website')" data-bs-toggle="modal" href="#stm">
                             <img src="images/service/Info.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">Information Website</h5>
@@ -555,7 +557,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card s-card" data-bs-toggle="modal" href="#wd">
+                        <div class="card s-card" onclick="formdata('Web Development','Other')" data-bs-toggle="modal" href="#stm">
                             <img src="images/service/other.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">OTHER</h5>
@@ -572,31 +574,43 @@
 
     <!-- Common Modal -->
     <div class="modal fade" id="en" aria-hidden="true" aria-labelledby="en" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="en">Enquire Now</h5>
+                    <h5 class="modal-title text-uppercase fw-bold text-danger" id="en">Enquire Now</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body ">
-                    <form action="" method="POST">
-                        <label for="" class="form-label float-start">Name</label>
-                        <input type="text" class="form-control" name="name" placeholder="Enter Your Name" required>
-                        <label for="" class="form-label float-start">Phone No</label>
-                        <input type="tel" class="form-control" name="phone" placeholder="Enter Your Phone No" required>
-                        <label for="" class="form-label float-start">Email</label>
-                        <input type="email" class="form-control" name="email" placeholder="Enter Your Email" required>
-
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="web development">Web Development</option>
-                            <option value="graphic designing">Graphic Designing</option>
-                            <option value="app development">App development</option>
-                        </select>
-                        <!-- <input type="hidden" class="form-control" name="service" value="web development" required> -->
-                        <label for="" class="form-label float-start">About Project</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Project Details" name="project-info" rows="3" required></textarea>
-                        <div class="modal-footer">
-                            <input class="btn btn-primary" type="submit" name="submit" value="Submit">
+                <div class="modal-body pt-3 px-5 pb-4">
+                    <form action="sql/insert.php" name="commonform" onsubmit="return enquire('commonform')" method="post">
+                        <div id="commonformenname" class="mb-3">
+                            <label for="" class="form-label float-start">Name</label> <span class="formerror"> </span>
+                            <input type="text" class="form-control" name="name" placeholder="Enter Your Name">
+                        </div>
+                        <div id="commonformenphone" class="mb-3">
+                            <label for="" class="form-label float-start">Phone No</label><span class="formerror"> </span>
+                            <input type="tel" class="form-control" name="phone" placeholder="Enter Your Phone No">
+                        </div>
+                        <div id="commonformenemail" class="mb-3">
+                            <label for="" class="form-label float-start">Email</label> <span class="formerror"> </span>
+                            <input type="email" class="form-control" name="email" placeholder="Enter Your Email">
+                        </div>
+                        <div>
+                            <input type="hidden" name="subtype" value="common">
+                        </div>
+                        <div id="commonformenservice" class="mb-3">
+                            <label for="" class="form-label float-start">Service</label>
+                            <select class="form-select" name="service" aria-label="Default select example">
+                                <option value="web development">Web Development</option>
+                                <option value="graphic designing">Graphic Designing</option>
+                                <option value="app development">App development</option>
+                            </select>
+                        </div>
+                        <div id="commonformenproject" class="mb-3">
+                            <label for="" class="form-label float-start">About Project</label> <span class="formerror"> </span>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Project Details" name="project-info" rows="3"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-danger fw-bold" type="submit" name="enbtnsubmit">SUBMIT</button>
                         </div>
                     </form>
                 </div>
@@ -605,27 +619,38 @@
     </div>
     <!--  -->
 
-    <!-- Web development Modal -->
-    <div class="modal fade" id="wd" aria-hidden="true" aria-labelledby="wd" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
+    <!-- all 3 service Modal -->
+    <div class="modal fade" id="stm" aria-hidden="true" aria-labelledby="stm" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="wd">Enquire Now</h5>
+                    <h5 class="modal-title text-uppercase fw-bold text-danger" id="stm">Enquire Now</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body ">
-                    <form action="" method="POST">
-                        <label for="" class="form-label float-start">Name</label>
-                        <input type="text" class="form-control" name="name" placeholder="Enter Your Name" required>
-                        <label for="" class="form-label float-start">Phone No</label>
-                        <input type="tel" class="form-control" name="phone" placeholder="Enter Your Phone No" required>
-                        <label for="" class="form-label float-start">Email</label>
-                        <input type="email" class="form-control" name="email" placeholder="Enter Your Email" required>
-                        <input type="hidden" class="form-control" name="service" value="web development" required>
-                        <label for="" class="form-label float-start">About Project</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Project Details" name="project-info" rows="3" required></textarea>
-                        <div class="modal-footer">
-                            <input class="btn btn-primary" type="submit" name="submit" value="Submit">
+                <div class="modal-body pt-3 px-5 pb-4">
+                    <form action="sql/insert.php" name="allserviceform" onsubmit="return enquire('allserviceform')" method="post">
+                        <div id="allserviceformenname" class="mb-2">
+                            <label for="" class="form-label float-start">Name</label> <span class="formerror"> </span>
+                            <input type="text" class="form-control" name="name" placeholder="Enter Your Name">
+                        </div>
+                        <div id="allserviceformenphone" class="mb-2">
+                            <label for="" class="form-label float-start">Phone No</label><span class="formerror"> </span>
+                            <input type="tel" class="form-control" name="phone" placeholder="Enter Your Phone No">
+                        </div>
+                        <div id="allserviceformenemail" class="mb-2">
+                            <label for="" class="form-label float-start">Email</label> <span class="formerror"> </span>
+                            <input type="email" class="form-control" name="email" placeholder="Enter Your Email">
+                        </div>
+                        <div>
+                            <input type="hidden" name="type" id="type">
+                            <input type="hidden" name="subtype" id="subtype">
+                        </div>
+                        <div id="allserviceformenproject" class="mb-2">
+                            <label for="" class="form-label float-start">About Project</label> <span class="formerror"> </span>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Project Details" name="project-info" rows="3"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-danger fw-bold" name="allenbtnsubmit">SUBMIT</button>
                         </div>
                     </form>
                 </div>
@@ -634,67 +659,10 @@
     </div>
     <!--  -->
 
-    <!-- Graphic Modal -->
-    <div class="modal fade" id="gd" aria-hidden="true" aria-labelledby="gd" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="gd">Enquire Now</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body ">
-                    <form action="" method="POST">
-                        <label for="" class="form-label float-start">Name</label>
-                        <input type="text" class="form-control" name="name" placeholder="Enter Your Name" required>
-                        <label for="" class="form-label float-start">Phone No</label>
-                        <input type="tel" class="form-control" name="phone" placeholder="Enter Your Phone No" required>
-                        <label for="" class="form-label float-start">Email</label>
-                        <input type="email" class="form-control" name="email" placeholder="Enter Your Email" required>
-                        <input type="hidden" class="form-control" name="service" value="graphic designing" required>
-                        <label for="" class="form-label float-start">About Design</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Design Details" name="project-info" rows="3" required></textarea>
-                        <div class="modal-footer">
-                            <input class="btn btn-primary" type="submit" name="submit" value="Submit">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--  -->
-
-    <!-- App development Modal -->
-    <div class="modal fade" id="ad" aria-hidden="true" aria-labelledby="ad" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="ad">Enquire Now</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body ">
-                    <form action="" method="POST">
-                        <label for="" class="form-label float-start">Name</label>
-                        <input type="text" class="form-control" name="name" placeholder="Enter Your Name" required>
-                        <label for="" class="form-label float-start">Phone No</label>
-                        <input type="tel" class="form-control" name="phone" placeholder="Enter Your Phone No" required>
-                        <label for="" class="form-label float-start">Email</label>
-                        <input type="email" class="form-control" name="email" placeholder="Enter Your Email" required>
-                        <input type="hidden" class="form-control" name="service" value="app development" required>
-                        <label for="" class="form-label float-start">About Project</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Project Details" name="project-info" rows="3" required></textarea>
-                        <div class="modal-footer">
-                            <input class="btn btn-primary" type="submit" name="submit" value="Submit">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--  -->
 
     <!-- Contact Us -->
     <div>
-        <div class="bg-light mt-5 py-5">
+        <div class="mt-5 py-5" id="contact-us">
             <h1 class="heading">CONTACT US</h1>
             <hr class="bg-primary border border-primary opacity-75 mx-auto mb-4">
             <p class="text-center fw-bold text-muted fs-5 px-3">
@@ -707,36 +675,41 @@
                             <img src="./images/contact.jpg" alt="" srcset="">
                         </div>
                     </div>
-                    <div class="cform mx-auto my-1">
-                        <form class="position-relative top-50 start-50 translate-middle" action="" method="post">
-                            <div class="row g-2 mb-3">
-                                <div class="col-md">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="floatingInputGrid" placeholder="Name" required>
+                    <div class="cform mx-auto my-1" id="contact-form">
+                        <form class="position-relative top-50 start-50 translate-middle" action="sql/insert.php" name="myForm" onsubmit="return validateForm()" method="post">
+                            <div class="row g-2">
+                                <div class="col-md" id="fname">
+                                    <div class="form-floating ">
+                                        <input type="text" class="form-control" id="floatingInputGrid" name="fname">
                                         <label for="floatingInputGrid">First Name</label>
+                                        <span class="formerror"> </span>
                                     </div>
                                 </div>
-                                <div class="col-md">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="floatingInputGrid" placeholder="Name" required>
+                                <div class="col-md" id="lname">
+                                    <div class="form-floating ">
+                                        <input type="text" class="form-control" id="floatingInputGrid" name="lname">
                                         <label for="floatingInputGrid">Last Name</label>
+                                        <span class="formerror"> </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-floating mb-3">
-                                <input type="tel" class="form-control" id="floatingPassword" placeholder="Phone No" required>
+                            <div class="form-floating" id="phone">
+                                <input type="tel" class="form-control" id="floatingPassword" name="phone">
                                 <label for="floatingPassword">Phone No</label>
+                                <span class="formerror"> </span>
                             </div>
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="Email" required>
+                            <div class="form-floating" id="email">
+                                <input type="email" class="form-control" id="floatingInput" name="email">
                                 <label for="floatingInput">Email Address</label>
+                                <span class="formerror"> </span>
                             </div>
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
+                            <div class="form-floating mb-2" id="msg">
+                                <textarea class="form-control" id="floatingTextarea2" style="height: 100px" name="msg"></textarea>
                                 <label for="floatingTextarea2">Message</label>
+                                <span class="formerror"> </span>
                             </div>
                             <div class="d-grid gap-2 mb-3">
-                                <button type="submit" class="btn btn-warning p-2 fw-bold" type="button">Send
+                                <button type="submit" class="btn btn-warning p-2 fw-bold" name="contactbtnsubmit">Send
                                     Now</button>
                             </div>
                         </form>
@@ -789,10 +762,12 @@
                         <!--Grid column-->
                         <div class="col-md-5 col-12">
                             <!-- Email input -->
-                            <div class="form-outline form-white mb-4">
-                                <input type="email" id="form5Example21" class="form-control" />
-                                <label class="form-label" for="form5Example21">Email address</label>
-                            </div>
+                            <form action="sql/insert.php" name="subform" onsubmit="return newssub()" method="post">
+                                <div class="form-outline form-white mb-4">
+                                    <input type="email" id="form5Example21" class="form-control" />
+                                    <label class="form-label" for="form5Example21">Email address</label>
+                                </div>
+                            </form>
                         </div>
                         <!--Grid column-->
 
@@ -822,10 +797,11 @@
 
 
 
+    <!-- javascript -->
+    <script src="js/script.js"></script>
 
-
-
-
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
