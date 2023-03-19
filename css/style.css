@@ -36,6 +36,48 @@ hr {
     z-index: 90;
 }
 
+/* Navbar */
+.navbar {
+    background-color: white !important;
+}
+
+.nav-section a {
+    margin: 0px 8px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+
+.nav-section a, .nav-section a:hover {
+    color: #000;
+}
+
+.nav-section li {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    margin-right: 10px;
+}
+
+.nav-section li:last-child {
+    margin-right: 0;
+}
+
+.nav-section li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.nav-section li:hover:after {
+    width: 100%;
+    background: rgb(255, 3, 3);
+}
+
+
 #home {
     font-family: 'Raleway', sans-serif;
     /* background: linear-gradient(rgba(0, 0, 0, 0.723), rgba(0, 0, 0, 0.723)), url("../images/bg2.jpg"); */

@@ -103,6 +103,20 @@ function validateForm() {
     }
     return returnval;
 }
+//  Email form validation 
+function newssub() {
+    var returnval = true;
+    clearErrors();
+
+    // Email
+    var submail = document.forms['subform']["submail"].value;
+    if (submail.length == 0) {
+        seterror("submail", "*Email is required");
+        returnval = false;
+    }
+
+    return returnval;
+}
 
 // validation form error clears
 function clearErrors() {

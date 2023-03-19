@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="wd">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -17,43 +17,30 @@
 </head>
 
 <body>
-
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="images/lo.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Tech-World
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-
-                </ul>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a href="index.php" class="navbar-brand logo">
+                    <img src="images/lo.jpg" height="75" alt="CoolBrand">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <div class="navbar-nav nav-section">
+                            <li><a href="#home" class="nav-item nav-link">Home</a></li>
+                            <li><a href="#about" class="nav-item nav-link">About Us</a></li>
+                            <li><a href="#service" class="nav-item nav-link">Service</a></li>
+                            <li><a href="#webservice" class="nav-item nav-link">Website Service</a></li>
+                            <li><a href="#contact-us" class="nav-item nav-link">Contact Us</a></li>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <!-- Home -->
     <div>
         <div id="home">
@@ -70,7 +57,7 @@
 
     <!-- About Us  -->
     <div>
-        <div class="about-us py-5" style="background-color: white;">
+        <div class="about-us py-5" style="background-color: white;" id="about">
             <h1 class="heading">ABOUT ABC</h1>
             <hr class="bg-primary border border-primary opacity-75 mx-auto mb-3">
             <div class="about-page justify-content-center d-flex flex-wrap mx-5">
@@ -103,7 +90,7 @@
     </div>
 
     <!-- service -->
-    <div class="service">
+    <div class="service pt-3" id="service">
         <div class="container py-5">
             <h1 class="heading text-light">OUR SERVICES</h1>
             <hr class="bg-primary border border-primary  opacity-75 mx-auto mb-4">
@@ -473,7 +460,7 @@
 
     <!-- sector -->
     <div>
-        <div class="container my-5">
+        <div class="container my-5 py-5" id="webservice">
             <h2 class="heading container mt-4 text-warni text-center">Web development Services</h2>
             <hr class="bg-primary border border-primary opacity-75 mx-auto mb-4">
             <div>
@@ -748,7 +735,7 @@
 
             <!-- Section: Form -->
             <section class="">
-                <form action="">
+                <form action="sql/insert.php" name="subform" onsubmit="return newssub()" method="post">
                     <!--Grid row-->
                     <div class="row d-flex justify-content-center">
                         <!--Grid column-->
@@ -762,19 +749,18 @@
                         <!--Grid column-->
                         <div class="col-md-5 col-12">
                             <!-- Email input -->
-                            <form action="sql/insert.php" name="subform" onsubmit="return newssub()" method="post">
-                                <div class="form-outline form-white mb-4">
-                                    <input type="email" id="form5Example21" class="form-control" />
-                                    <label class="form-label" for="form5Example21">Email address</label>
-                                </div>
-                            </form>
+                            <div class="form-outline form-white mb-4" id="submail">
+                                <input type="email" name="submail" id="" class="form-control" />
+                                <label class="form-label" for="form5Example21">Email address</label>
+                                <span class="formerror text-light"> </span>
+                            </div>
                         </div>
                         <!--Grid column-->
 
                         <!--Grid column-->
                         <div class="col-auto">
                             <!-- Submit button -->
-                            <button type="submit" class="btn btn-outline-light mb-4">
+                            <button type="submit" class="btn btn-outline-light mb-4" name="submailbtn">
                                 Subscribe
                             </button>
                         </div>
