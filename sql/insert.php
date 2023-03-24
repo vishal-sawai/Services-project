@@ -19,13 +19,10 @@ if (isset($_POST['contactbtnsubmit'])) {
     $result = mysqli_query($conn, $sql);
 
     if (!$result) {
-?>
-        <script>
-            alert("Something Wrong");
-        </script>
-    <?php
+        header('Location: ../index.php?status=0');
     } else {
-        header("Location: ../thankyou.php");
+        // header("Location: ../thankyou.php");
+        header('Location: ../index.php?status=1');
     }
 
     mysqli_close($conn);
@@ -50,11 +47,7 @@ if (isset($_POST['enbtnsubmit'])) {
     $result = mysqli_query($conn, $sql);
 
     if (!$result) {
-    ?>
-        <script>
-            alert("Something Wrong");
-        </script>
-    <?php
+        header('Location: ../index.php?status=0');
     } else {
         header("Location: ../thankyou.php");
     }
@@ -80,11 +73,7 @@ if (isset($_POST['allenbtnsubmit'])) {
     $result = mysqli_query($conn, $sql);
 
     if (!$result) {
-    ?>
-        <script>
-            alert("Something Wrong");
-        </script>
-    <?php
+        header('Location: ../index.php?status=0');
     } else {
         header("Location: ../thankyou.php");
     }
@@ -105,11 +94,7 @@ if (isset($_POST['submailbtn'])) {
     $result = mysqli_query($conn, $sql);
 
     if (!$result) {
-    ?>
-        <script>
-            alert("Something Wrong");
-        </script>
-<?php
+        header('Location: ../index.php?status=0');
     } else {
         header("Location: ../thankyou.php");
     }

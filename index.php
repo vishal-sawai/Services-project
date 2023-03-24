@@ -12,9 +12,31 @@
 
     <!-- font aweosome -->
     <script src="https://kit.fontawesome.com/ff3c91d27a.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </head>
 
 <body>
+
+    <?php
+    $status = 3;
+    $status = $_GET['status'];
+    if ($status == 0) {
+    ?>
+        <script>
+            swal("Failed", "Something Wrong!", "error");
+        </script>
+    <?php
+    } else if ($status == 1) {
+    ?>
+        <script>
+            swal("success", "Thank You!", "success");
+        </script>
+    <?php
+    }
+    ?>
+
     <!-- Navbar -->
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
