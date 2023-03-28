@@ -12,17 +12,16 @@ if (isset($_POST['contactbtnsubmit'])) {
     $email = $_POST['email'];
     $msg = $_POST['msg'];
 
-    $datetime = date('Y-m-d H:i:s');;
+    $datetime = date('Y-m-d H:i:s');
 
     $sql = "INSERT INTO message VALUES('','$fname','$lname','$phone','$email','$msg','$datetime')";
 
     $result = mysqli_query($conn, $sql);
 
     if (!$result) {
-        header('Location: ../index.php?status=0');
+        header('Location: ../index.php?status=3');
     } else {
-        // header("Location: ../thankyou.php");
-        header('Location: ../index.php?status=1');
+        header('Location: ../index.php?status=2&msg=Your Message Has Been Sent Successfully');
     }
 
     mysqli_close($conn);
@@ -47,9 +46,9 @@ if (isset($_POST['enbtnsubmit'])) {
     $result = mysqli_query($conn, $sql);
 
     if (!$result) {
-        header('Location: ../index.php?status=0');
+        header('Location: ../index.php?status=3');
     } else {
-        header("Location: ../thankyou.php");
+        header('Location: ../index.php?status=2&msg=Your Request Has Been Submitted');
     }
 
     mysqli_close($conn);
@@ -73,9 +72,9 @@ if (isset($_POST['allenbtnsubmit'])) {
     $result = mysqli_query($conn, $sql);
 
     if (!$result) {
-        header('Location: ../index.php?status=0');
+        header('Location: ../index.php?status=3');
     } else {
-        header("Location: ../thankyou.php");
+        header('Location: ../index.php?status=2&msg=Your Request Has Been Submitted');
     }
 
     mysqli_close($conn);
@@ -94,9 +93,9 @@ if (isset($_POST['submailbtn'])) {
     $result = mysqli_query($conn, $sql);
 
     if (!$result) {
-        header('Location: ../index.php?status=0');
+        header('Location: ../index.php?status=3');
     } else {
-        header("Location: ../thankyou.php");
+        header('Location: ../index.php?status=2&msg=Your Email Added');
     }
 
     mysqli_close($conn);

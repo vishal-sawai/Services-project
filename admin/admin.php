@@ -13,6 +13,8 @@
     <!-- font aweosome -->
     <script src="https://kit.fontawesome.com/ff3c91d27a.js" crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <style>
         .formerror {
             padding-left: 10px;
@@ -26,8 +28,11 @@
 
 <body>
 
-    <div>
+    <script>
+        swal("Failed", "<?php echo $_GET['status']; ?>", "error");
+    </script>
 
+    <div>
 
         <section class="vh-100" style="background-color: #34495E;">
             <div class="container py-5 h-100">

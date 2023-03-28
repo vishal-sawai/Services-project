@@ -280,21 +280,14 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form action="">
+                        <form action="authentication.php" method="post">
                             <div class="mb-3">
-                                <label for="">OTP</label>
-                                <input class="form-control" type="text" placeholder="Enter Otp" name="settingotp" id="" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Set New Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Set New Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" required>
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" value="<?php echo $_SESSION['adminUser']; ?>" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>
+                                <input type="hidden" class="form-control" name="settingEmail" value="<?php echo $_SESSION['adminUser']; ?>" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
                             <div class="d-grid gap-2 mt-2">
-                                <input class="btn btn-danger" type="submit" value="Submit">
+                                <input class="btn btn-danger" type="submit" name="sendotp" value="Send Otp">
                             </div>
                         </form>
                     </div>

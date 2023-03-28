@@ -20,18 +20,18 @@
 <body>
 
     <?php
-    $status = 3;
     $status = $_GET['status'];
-    if ($status == 0) {
+    $alertmsg = $_GET['msg'];
+    if ($status == 2) {
+    ?>
+        <script>
+            swal("success", "<?php echo $alertmsg; ?>", "success");
+        </script>
+    <?php
+    } else if ($status == 3) {
     ?>
         <script>
             swal("Failed", "Something Wrong!", "error");
-        </script>
-    <?php
-    } else if ($status == 1) {
-    ?>
-        <script>
-            swal("success", "Thank You!", "success");
         </script>
     <?php
     }
