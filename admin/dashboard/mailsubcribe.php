@@ -40,11 +40,9 @@
             <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                 <!-- Sidebar - Brand -->
-                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                    <div class="sidebar-brand-icon rotate-n-15">
-                        <i class="fas fa-laugh-wink"></i>
-                    </div>
-                    <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
+
+                    <div class="sidebar-brand-text mx-3">OPENCODE</div>
                 </a>
 
                 <!-- Divider -->
@@ -117,7 +115,7 @@
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a> -->
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#passChange">
                                         <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                         Settings
                                     </a>
@@ -192,7 +190,7 @@
                 <footer class="sticky-footer bg-white">
                     <div class="container my-auto">
                         <div class="copyright text-center my-auto">
-                            <span>Copyright &copy; Your Website 2021</span>
+                            <span>Copyright &copy; OPENCODE</span>
                         </div>
                     </div>
                 </footer>
@@ -208,6 +206,35 @@
         <a class="scroll-to-top rounded" href="#page-top">
             <i class="fas fa-angle-up"></i>
         </a>
+
+        <!-- Settings modal -->
+        <div class="modal fade" id="passChange" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel2">Change Password</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="authentication.php" method="post">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" value="<?php echo $_SESSION['adminUser']; ?>" id="exampleInputEmail1" aria-describedby="emailHelp" disabled>
+                                <input type="hidden" class="form-control" name="settingEmail" value="<?php echo $_SESSION['adminUser']; ?>" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="d-grid gap-2 mt-2">
+                                <input class="btn btn-danger" type="submit" name="sendotp" value="Send Otp">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Logout Modal-->
         <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

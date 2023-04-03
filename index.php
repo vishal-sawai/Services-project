@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>OPENCODE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
     <!-- css -->
@@ -20,12 +20,22 @@
 <body>
 
     <?php
+
+    error_reporting(0);
+
     $status = $_GET['status'];
     $alertmsg = $_GET['msg'];
     if ($status == 2) {
     ?>
         <script>
-            swal("success", "<?php echo $alertmsg; ?>", "success");
+            swal("success", "<?php echo $alertmsg; ?>", "success")
+                .then((value) => {
+                    if (value === true) {
+                        swal(location.replace("index.php"));
+                    } else {
+                        swal(location.replace("index.php"));
+                    }
+                });
         </script>
     <?php
     } else if ($status == 3) {
@@ -39,10 +49,10 @@
 
     <!-- Navbar -->
     <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a href="index.php" class="navbar-brand logo">
-                    <img src="images/lo.jpg" height="75" alt="CoolBrand">
+                    <img src="images/opencode.png" height="40" alt="CoolBrand">
                 </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -64,21 +74,34 @@
     <!-- Home -->
     <div>
         <div id="home">
-            <div class="home-info">
-                <h1 class="text-center fw-bold">TECH-WORLD</h1>
-                <h3 class="text-center">Make Your Website</h3>
-                <div class="d-grid gap-2 col-3 mx-auto">
-                    <button class="btn btn-warning" type="button" data-bs-toggle="modal" href="#en">Enquire Now</button>
-
+            <div class="container-fluid home-info pt-3 d-flex">
+                <!-- <h1 class="text-center fw-bold">TECH-WORLD</h1>
+                    <h3 class="text-center">Make Your Website</h3>
+                    <div class="d-grid gap-2 col-3 mx-auto">
+                        <button class="btn btn-warning" type="button" data-bs-toggle="modal" href="#en">Enquire Now</button> -->
+                <div class="homemain d-flex mt-3 mx-auto">
+                    <div class="homefirst float-start border py-5 px-4 float-md-start">
+                        <div class="position-relative top-50 start-50 translate-middle">
+                            <h1 class="fw-bold text-warning"><span class="text-primary">WEB</span> || <span class="text-danger">GRAPHIC</span> || <span class="text-primary">APP</span> </h1>
+                            <p class="fw-bold fs-4 text-danger">Your business's online presence is not just an option, it's a necessity for success in today's digital world</p>
+                            <div class="d-grid gap-2 col-3">
+                                <button class="btn btn-warning" type="button" data-bs-toggle="modal" href="#en">Enquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="homesecond float-end border">
+                        <img src="images/bg.gif" class="" alt="" srcset="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 
     <!-- About Us  -->
     <div>
-        <div class="about-us py-5" style="background-color: white;" id="about">
-            <h1 class="heading">ABOUT ABC</h1>
+        <div class="about-us py-4" style="background-color: white;" id="about">
+            <h1 class="heading">ABOUT US</h1>
             <hr class="bg-primary border border-primary opacity-75 mx-auto mb-3">
             <div class="about-page justify-content-center d-flex flex-wrap mx-5">
                 <div class="about-video mx-auto">
@@ -110,7 +133,7 @@
     </div>
 
     <!-- service -->
-    <div class="service pt-3" id="service">
+    <div class="service" id="service">
         <div class="container py-5">
             <h1 class="heading text-light">OUR SERVICES</h1>
             <hr class="bg-primary border border-primary  opacity-75 mx-auto mb-4">
@@ -480,7 +503,7 @@
 
     <!-- sector -->
     <div>
-        <div class="container my-5 py-5" id="webservice">
+        <div class="container py-5" id="webservice">
             <h2 class="heading container mt-4 text-warni text-center">Web development Services</h2>
             <hr class="bg-primary border border-primary opacity-75 mx-auto mb-4">
             <div>
@@ -614,7 +637,7 @@
                         </div>
                         <div id="commonformenproject" class="mb-3">
                             <label for="" class="form-label float-start">About Project</label> <span class="formerror"> </span>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Project Details" name="project-info" rows="3"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Write Something About Project" name="project-info" rows="3"></textarea>
                         </div>
                         <div class="d-grid gap-2">
                             <button class="btn btn-danger fw-bold" type="submit" name="enbtnsubmit">SUBMIT</button>
@@ -654,7 +677,7 @@
                         </div>
                         <div id="allserviceformenproject" class="mb-2">
                             <label for="" class="form-label float-start">About Project</label> <span class="formerror"> </span>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Project Details" name="project-info" rows="3"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Write Something About Project  " name="project-info" rows="3"></textarea>
                         </div>
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-danger fw-bold" name="allenbtnsubmit">SUBMIT</button>
@@ -669,7 +692,7 @@
 
     <!-- Contact Us -->
     <div>
-        <div class="mt-5 py-5" id="contact-us">
+        <div class="py-5" id="contact-us">
             <h1 class="heading">CONTACT US</h1>
             <hr class="bg-primary border border-primary opacity-75 mx-auto mb-4">
             <p class="text-center fw-bold text-muted fs-5 px-3">
@@ -679,7 +702,7 @@
                 <div class="contact-form justify-content-center d-flex flex-wrap p-4">
                     <div class="contact-info w-50 mx-auto">
                         <div class="contact-img position-relative top-50 start-50 translate-middle">
-                            <img src="./images/contact.jpg" alt="" srcset="">
+                            <img src="./images/contactus.gif" alt="" srcset="">
                         </div>
                     </div>
                     <div class="cform mx-auto my-1" id="contact-form">
@@ -730,26 +753,26 @@
     <!-- Footer -->
     <footer class="bg-dark text-center text-white">
         <!-- Grid container -->
-        <div class="container p-4">
+        <div class="container px-4 pt-4">
             <!-- Section: Social media -->
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+            <!-- <section class="mb-4"> -->
+            <!-- Facebook -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a> -->
 
-                <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+            <!-- Twitter -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a> -->
 
-                <!-- Google -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+            <!-- Google -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a> -->
 
-                <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+            <!-- Instagram -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a> -->
 
-                <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+            <!-- Linkedin -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a> -->
 
-                <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+            <!-- Github -->
+            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a> -->
             </section>
             <!-- Section: Social media -->
 
@@ -794,7 +817,7 @@
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2020 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            <a class="text-white" href="index.php">OPENCODE</a>
             All Rights Reserved
         </div>
         <!-- Copyright -->

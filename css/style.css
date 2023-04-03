@@ -79,32 +79,38 @@ hr {
 
 
 #home {
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     /* background: linear-gradient(rgba(0, 0, 0, 0.723), rgba(0, 0, 0, 0.723)), url("../images/bg2.jpg"); */
-    background: url("../images/bg2.jpg");
-    background-position: center;
+    /* background: url("../images/bg2.jpg"); */
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    color: white;
+    background-size: cover; */
+    /* height: 100vh; */
+    background-color: white;
+    /* color: white; */
 }
 
 .home-info {
-    padding-top: 8%;
+    /* padding-top: 8%; */
 }
 
 #home h1 {
-    font-size: 50px;
-    color: skyblue;
+    /* font-size: 50px;
+    color: skyblue; */
 }
 
 #home h3 {
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 
 #home button {
-    border: none;
-    font-size: 20px;
+    /* border: none;
+    font-size: 20px; */
+}
+
+.homesecond img {
+    height: 600px;
+    width: 550px;
 }
 
 /* About Us */

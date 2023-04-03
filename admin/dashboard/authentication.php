@@ -40,13 +40,13 @@
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'vishalsawai17252@gmail.com';
-            $mail->Password   = 'bnjmncgivtjpnusq';
+            $mail->Username   = 'opencodeservice@gmail.com';
+            $mail->Password   = 'ndsglwhxqgkyhppd';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port       = 465;
 
 
-            $mail->setFrom('vishalsawai17252@gmail.com', 'company name');
+            $mail->setFrom('opencodeservice@gmail.com', 'opencode');
 
             $otp = mt_rand(100000, 999999);
             setcookie("otp", $otp);
@@ -55,7 +55,7 @@
 
 
             $mail->isHTML(true);
-            $mail->Subject = 'company Name Otp Verficatication';
+            $mail->Subject = 'opencode Otp Verficatication';
             $mail->Body    = '  Your Otp : ' . $otp;
             $mail->send();
             $msg = 'Otp is sent your register email id';
@@ -146,11 +146,11 @@
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'vishalsawai17252@gmail.com';
-            $mail->Password   = 'bnjmncgivtjpnusq';
+            $mail->Username   = 'opencodeservice@gmail.com';
+            $mail->Password   = 'ndsglwhxqgkyhppd';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port       = 465;
-            $mail->setFrom('vishalsawai17252@gmail.com', 'company name');
+            $mail->setFrom('opencodeservice@gmail.com', 'opencode');
             $totp = mt_rand(100000, 999999);
             setcookie("totp", $totp);
 
@@ -158,7 +158,7 @@
 
 
             $mail->isHTML(true);
-            $mail->Subject = 'company Name Otp Verficatication';
+            $mail->Subject = 'opencode Otp Verficatication';
             $mail->Body    = '  Your Otp : ' . $totp;
             $mail->send();
             $msg = 'Otp is sent your new email id';

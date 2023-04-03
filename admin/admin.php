@@ -29,7 +29,14 @@
 <body>
 
     <script>
-        swal("Failed", "<?php echo $_GET['status']; ?>", "error");
+        swal("Failed", "<?php echo $_GET['status']; ?>", "error")
+            .then((value) => {
+                if (value === true) {
+                    swal(location.replace("admin.php"));
+                } else {
+                    swal(location.replace("admin.php"));
+                }
+            });
     </script>
 
     <div>
@@ -48,9 +55,8 @@
 
                                         <form action="dashboard/login.php" name="myForm" onsubmit="return validateForm()" method="post">
 
-                                            <div class="d-flex align-items-center mb-3 pb-1">
-                                                <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
-                                                <span class="h1 fw-bold mb-0">Logo</span>
+                                            <div class="d-flex align-items-center mb-4 pb-1">
+                                                <img src="../images/opencode.png" alt="login form" class="img-fluid mx-auto" style="height: 50px;" />
                                             </div>
 
                                             <div class="form-outline mb-3" id="email">
