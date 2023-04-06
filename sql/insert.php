@@ -35,7 +35,7 @@ if (isset($_POST['contactbtnsubmit'])) {
 
     $datetime = date('Y-m-d H:i:s');
 
-    $sql = "INSERT INTO message VALUES('','$fname','$lname','$phone','$email','$msg','$datetime')";
+    $sql = "INSERT INTO message(fname,lname,phone,email,msg,datetime) VALUES('$fname','$lname','$phone','$email','$msg','$datetime')";
 
     $result = mysqli_query($conn, $sql);
 
@@ -72,7 +72,7 @@ if (isset($_POST['enbtnsubmit'])) {
 
     $datetime = date('Y-m-d H:i:s');;
 
-    $sql = "INSERT INTO enquire VALUES('','$name','$phone','$email','$service','$subtype',' $projectinfo','$datetime')";
+    $sql = "INSERT INTO enquire(name,phone,email,service,subtype,projectinfo,datetime) VALUES('$name','$phone','$email','$service','$subtype',' $projectinfo','$datetime')";
 
     $result = mysqli_query($conn, $sql);
 
@@ -109,7 +109,7 @@ if (isset($_POST['allenbtnsubmit'])) {
 
     $datetime = date('Y-m-d H:i:s');;
 
-    $sql = "INSERT INTO enquire VALUES('','$name','$phone','$email','$service','$subtype',' $projectinfo','$datetime')";
+    $sql = "INSERT INTO enquire(name,phone,email,service,subtype,projectinfo,datetime) VALUES('$name','$phone','$email','$service','$subtype',' $projectinfo','$datetime')";
 
     $result = mysqli_query($conn, $sql);
 
@@ -141,7 +141,7 @@ if (isset($_POST['submailbtn'])) {
 
     $datetime = date('Y-m-d H:i:s');;
 
-    $sql = "INSERT INTO mailsubcribe VALUES('','$email','$datetime')";
+    $sql = "INSERT INTO mailsubcribe(email,datetime) VALUES('$email','$datetime')";
 
     $result = mysqli_query($conn, $sql);
 

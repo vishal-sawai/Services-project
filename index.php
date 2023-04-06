@@ -41,7 +41,13 @@
     } else if ($status == 3) {
     ?>
         <script>
-            swal("Failed", "Something Wrong!", "error");
+            swal("Failed", "Something Wrong!", "error").then((value) => {
+                if (value === true) {
+                    swal(location.replace("index.php"));
+                } else {
+                    swal(location.replace("index.php"));
+                }
+            });
         </script>
     <?php
     }
@@ -52,7 +58,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a href="index.php" class="navbar-brand logo">
-                    <img src="images/opencode.png" height="40" alt="CoolBrand">
+                    <img src="images/opencode.png" height="50" alt="CoolBrand">
                 </a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -74,23 +80,20 @@
     <!-- Home -->
     <div>
         <div id="home">
-            <div class="container-fluid home-info pt-3 d-flex">
-                <!-- <h1 class="text-center fw-bold">TECH-WORLD</h1>
-                    <h3 class="text-center">Make Your Website</h3>
-                    <div class="d-grid gap-2 col-3 mx-auto">
-                        <button class="btn btn-warning" type="button" data-bs-toggle="modal" href="#en">Enquire Now</button> -->
-                <div class="homemain d-flex mt-3 mx-auto">
-                    <div class="homefirst float-start border py-5 px-4 float-md-start">
+            <div class="container-fluid home-info py-3 px-5 d-flex">
+                <div class="homemain d-flex mt-4 mx-auto">
+                    <div class="homefirst pt-5 px-4 float-md-start">
                         <div class="position-relative top-50 start-50 translate-middle">
-                            <h1 class="fw-bold text-warning"><span class="text-primary">WEB</span> || <span class="text-danger">GRAPHIC</span> || <span class="text-primary">APP</span> </h1>
-                            <p class="fw-bold fs-4 text-danger">Your business's online presence is not just an option, it's a necessity for success in today's digital world</p>
-                            <div class="d-grid gap-2 col-3">
-                                <button class="btn btn-warning" type="button" data-bs-toggle="modal" href="#en">Enquire Now</button>
+                            <h1 class="fw-bold text-white my-2"><span class="text-warning">WEB</span> | <span class="text-warning">GRAPHIC</span> | <span class="text-warning">APP</span> </h1>
+                            <p class="fw-bold fs-5 text-white">Your business's online presence is not just an option, it's a necessity for success in today's digital world</p>
+                            <div class="homebtn d-grid gap-2 col-4">
+                                <button class="btn btn-danger fw-bold rounded-pill w-100" type="button" data-bs-toggle="modal" href="#en">Get Started </button>
                             </div>
                         </div>
                     </div>
-                    <div class="homesecond float-end border">
-                        <img src="images/bg.gif" class="" alt="" srcset="">
+                    <div class="homesecond float-end">
+                        <img class="imagefirst" src="images/home.gif" alt="" srcset="">
+                        <img class="imagesecond img-fluid" src="images/home2.gif" alt="" srcset="">
                     </div>
                 </div>
             </div>
@@ -751,7 +754,7 @@
     <!--  -->
 
     <!-- Footer -->
-    <footer class="bg-dark text-center text-white">
+    <footer class="text-center text-white" style="background-color: #250648ff;">
         <!-- Grid container -->
         <div class="container px-4 pt-4">
             <!-- Section: Social media -->

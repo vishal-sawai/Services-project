@@ -1,7 +1,7 @@
 
 <?php
 
-$conn = mysqli_connect("localhost", "root", "", "service-project");
+$conn = mysqli_connect("localhost", "root", "coder", "service-project");
 
 // Check connection
 if ($conn === false) {
