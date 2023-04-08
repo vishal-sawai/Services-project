@@ -98,7 +98,7 @@ function validateForm() {
     // message
     var msg = document.forms['myForm']["msg"].value;
     if (msg.length == 0) {
-        seterror("msg", "*message no is required");
+        seterror("msg", "*message is required");
         returnval = false;
     }
     return returnval;
