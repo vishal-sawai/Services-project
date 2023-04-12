@@ -91,11 +91,12 @@ hr {
 
 /* About Us */
 .about-page {
-    padding: 20px 100px;
+    padding: 20px 30px;
+    font-size: 18px;
 }
 
 .about-video {
-    width: 40%;
+    width: 50%;
 }
 
 .about-video video {
@@ -104,11 +105,11 @@ hr {
 }
 
 .about-info {
-    width: 60%;
+    width: 50%;
 }
 
 .about-info p {
-    margin-left: 10px;
+    margin-left: 50px;
     margin-right: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 

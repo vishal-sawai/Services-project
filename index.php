@@ -114,22 +114,16 @@
                     </video>
                 </div>
                 <div class="about-info mx-auto">
-                    <p class="position-relative top-50 start-50 translate-middle fs-5">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem,
-                        ipsum dolor sit amet consectetur adipisicing elit.
-                        Architecto temporibus natus placeat
-                        ipsam
-                        aperiam at suscipit autem ut obcaecati, possimus, voluptatum doloremque! Consequatur cum
-                        molestiae
-                        quaerat ex ducimus beatae doloremque.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto temporibus natus placeat
-                        ipsam
-                        aperiam at suscipit autem ut obcaecati, possimus, voluptatum doloremque! Consequatur cum
-                        molestiae
-                        quaerat ex ducimus beatae doloremque.
-
-
-                    </p>
+                    <div class="position-relative top-50 start-50 translate-middle">
+                        <p class="my-2"> <span class="fw-bold text-danger fs-3"><span class="text-primary">Open</span>code</span> is a leading provider of web development, graphic design,
+                            and app development services.</p>
+                        <p class="my-2">Our team of experienced professionals works diligently to create high-quality solutions that meet the unique needs of our clients.
+                            At Opencode, we understand the importance of delivering projects on time and within budget.</p>
+                        <p class="my-2"> Our development process is designed to ensure that we deliver exceptional results,
+                            while keeping our clients informed and involved throughout the entire process.</p>
+                        <p class="my-2"> Whether you need a new website, a mobile app, or a complete branding overhaul,
+                            Opencode has the expertise and experience to deliver the results you need.</p>
+                    </div>
                 </div>
             </div>
         </div>

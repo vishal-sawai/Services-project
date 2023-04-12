@@ -27,9 +27,19 @@
 </head>
 
 <body>
-
+    <?php
+    error_reporting(0);
+    ?>
     <script>
         swal("Failed", "<?php echo $_GET['status']; ?>", "error")
+            .then((value) => {
+                if (value === true) {
+                    swal(location.replace("admin.php"));
+                } else {
+                    swal(location.replace("admin.php"));
+                }
+            });
+        swal("Congrats", "<?php echo $_GET['statusforget']; ?>", "success")
             .then((value) => {
                 if (value === true) {
                     swal(location.replace("admin.php"));
@@ -76,6 +86,9 @@
                                             <div class="pt-1 mb-4">
                                                 <button class="btn btn-dark btn-lg btn-block" type="submit" name="loginbtn">Login</button>
                                             </div>
+                                            <a class="text-primary mt-2 text-decoration-none" href="../sql/otp.php">
+                                                Forgot Password
+                                            </a>
                                         </form>
 
                                     </div>
