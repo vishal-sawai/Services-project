@@ -23,14 +23,15 @@
 
     error_reporting(0);
     $alertmsg = $_GET['status'];
+    if ($alertmsg == ("Your Password Is Not Updated" || "please Enter Vaild Otp" || "New Password & Confirm password not match")) {
     ?>
-    <script>
-        swal("Failed", "<?php echo $alertmsg; ?>", "error");
-    </script>
+        <script>
+            swal("Failed", "<?php echo $alertmsg; ?>", "error");
+        </script>
 
-
-    <!-- forgot password -->
-    <?php
+        <!-- forgot password -->
+        <?php
+    }
     include 'conn.php';
 
     use PHPMailer\PHPMailer\PHPMailer;
@@ -76,7 +77,7 @@
             $mail->Body    = '  Your Otp : ' . $otp;
             $mail->send();
             $msg = 'Otp is sent your register email id';
-    ?>
+        ?>
 
     <?php
         }

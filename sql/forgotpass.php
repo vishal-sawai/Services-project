@@ -17,10 +17,10 @@ if (isset($_POST['submit'])) {
     if ($newpass == $cnfpass) {
         if ($otp == $otpvar) {
             $encrypted_password = password_hash($cnfpass, PASSWORD_DEFAULT);
-            $sql = "UPDATE adminlogin SET Password = '$encrypted_password' WHERE username = '$email'";
+            $sql = "UPDATE adminlogin SET password = '$encrypted_password' WHERE username = '$email'";
             $result =  mysqli_query($conn, $sql);
             if ($result) {
-                header('Location: otp.php?statusforget=Your Password Is Changed');
+                header('Location: ../admin/admin.php?statusforget=Your Password Is Changed');
             } else {
 
                 header('Location: otp.php?status=Your Password Is Not Updated');
