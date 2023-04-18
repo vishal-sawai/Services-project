@@ -12,9 +12,6 @@
 
     <!-- font aweosome -->
     <script src="https://kit.fontawesome.com/ff3c91d27a.js" crossorigin="anonymous"></script>
-
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
 </head>
 
 <body>
@@ -77,6 +74,7 @@
             </div>
         </nav>
     </div>
+
     <!-- Home -->
     <div>
         <div id="home">
@@ -115,7 +113,7 @@
                 </div>
                 <div class="about-info mx-auto">
                     <div class="position-relative top-50 start-50 translate-middle">
-                        <p class="my-2"> <span class="fw-bold text-danger fs-3"><span class="text-primary">Open</span>code</span> is a leading provider of web development, graphic design,
+                        <p class="my-2"> <span class="fw-bold text-danger fs-3"><span class="text-primary"></> Open</span>code</span> is a leading provider of web development, graphic design,
                             and app development services.</p>
                         <p class="my-2">Our team of experienced professionals works diligently to create high-quality solutions that meet the unique needs of our clients.
                             At Opencode, we understand the importance of delivering projects on time and within budget.</p>
@@ -436,7 +434,6 @@
         </div>
     </div>
     <!--  -->
-    <!--  -->
 
     <!-- feature -->
     <div class="feature">
@@ -686,7 +683,6 @@
     </div>
     <!--  -->
 
-
     <!-- Contact Us -->
     <div>
         <div class="py-5" id="contact-us">
@@ -822,9 +818,10 @@
     <!-- Footer -->
 
 
-
     <!-- javascript -->
     <script src="js/script.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>

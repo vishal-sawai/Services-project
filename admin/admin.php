@@ -13,8 +13,6 @@
     <!-- font aweosome -->
     <script src="https://kit.fontawesome.com/ff3c91d27a.js" crossorigin="anonymous"></script>
 
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
     <style>
         .formerror {
             padding-left: 10px;
@@ -22,7 +20,6 @@
             opacity: 50%;
         }
     </style>
-
 
 </head>
 
@@ -59,9 +56,7 @@
     <?php
     }
     ?>
-
     <div>
-
         <section class="vh-100" style="background-color: #34495E;">
             <div class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
@@ -73,27 +68,22 @@
                                 </div>
                                 <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                     <div class="card-body p-4 p-lg-5 text-black">
-
                                         <form action="dashboard/login.php" name="myForm" onsubmit="return validateForm()" method="post">
-
                                             <div class="d-flex align-items-center mb-4 pb-1">
                                                 <img src="../images/opencode.png" alt="login form" class="img-fluid mx-auto" style="height: 50px;" />
                                             </div>
-
                                             <div class="form-outline mb-3" id="email">
                                                 <input type="email" id="form2Example17" class="form-control form-control-lg" name="email" />
                                                 <label class="form-label" for="form2Example17">User Name</label>
                                                 <span class="formerror"> </span>
 
                                             </div>
-
                                             <div class="form-outline mb-3" id="pass">
                                                 <input type="password" id="form2Example27" name="pass" class="form-control form-control-lg" />
                                                 <label class="form-label" for="form2Example27">Password</label>
                                                 <span class="formerror"> </span>
 
                                             </div>
-
                                             <div class="pt-1 mb-4">
                                                 <button class="btn btn-dark btn-lg btn-block" type="submit" name="loginbtn">Login</button>
                                             </div>
@@ -101,7 +91,6 @@
                                                 Forgot Password
                                             </a>
                                         </form>
-
                                     </div>
                                 </div>
                             </div>
@@ -110,11 +99,7 @@
                 </div>
             </div>
         </section>
-
     </div>
-
-
-
 
     <!-- javascript -->
     <script>
@@ -151,6 +136,7 @@
             element.getElementsByClassName('formerror')[0].innerHTML = error;
         }
     </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 

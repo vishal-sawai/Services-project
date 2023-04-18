@@ -9,8 +9,6 @@
 
     <!-- Bootstrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -29,7 +27,6 @@
     $mail = new PHPMailer(true);
     ?>
     <?php
-
 
     // send otp from dashbord
     if (isset($_POST['sendotp'])) {
@@ -95,9 +92,7 @@
         <?php
     }
 
-
     // Next btn
-
     if (isset($_POST['nextotp'])) {
         $sotp = $_POST['sotp'];
         $nmail = $_POST['newemail'];
@@ -228,6 +223,7 @@
     ?>
 
     <!-- javascript -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 

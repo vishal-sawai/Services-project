@@ -23,7 +23,6 @@ body {
     padding: 0px 0px;
     font-weight: bold;
     color: #1C2833;
-
 }
 
 hr {
@@ -73,10 +72,8 @@ hr {
     background: rgb(255, 3, 3);
 }
 
-
 #home {
     background-color: #250648ff;
-    /* height: 100vh; */
     padding-bottom: 150px;
 }
 
@@ -112,7 +109,6 @@ hr {
     margin-left: 50px;
     margin-right: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
 /* service */
