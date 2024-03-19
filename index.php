@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OPENCODE</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
     <!-- font aweosome -->
     <script src="https://kit.fontawesome.com/ff3c91d27a.js" crossorigin="anonymous"></script>
@@ -17,41 +21,6 @@
 </head>
 
 <body>
-
-    <?php
-
-    error_reporting(0);
-
-    $status = $_GET['status'];
-    $alertmsg = $_GET['msg'];
-    if ($status == 2) {
-    ?>
-        <script>
-            swal("success", "<?php echo $alertmsg; ?>", "success")
-                .then((value) => {
-                    if (value === true) {
-                        swal(location.replace("index.php"));
-                    } else {
-                        swal(location.replace("index.php"));
-                    }
-                });
-        </script>
-    <?php
-    } else if ($status == 3) {
-    ?>
-        <script>
-            swal("Failed", "Something Wrong!", "error").then((value) => {
-                if (value === true) {
-                    swal(location.replace("index.php"));
-                } else {
-                    swal(location.replace("index.php"));
-                }
-            });
-        </script>
-    <?php
-    }
-    ?>
-
     <!-- Navbar -->
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -84,10 +53,13 @@
                 <div class="homemain d-flex mt-4 mx-auto">
                     <div class="homefirst pt-5 px-4 float-md-start">
                         <div class="position-relative top-50 start-50 translate-middle">
-                            <h1 class="fw-bold text-white my-2"><span class="text-warning">WEB</span> | <span class="text-warning">GRAPHIC</span> | <span class="text-warning">APP</span> </h1>
-                            <p class="fw-bold fs-5 text-white">Your business's online presence is not just an option, it's a necessity for success in today's digital world</p>
+                            <h1 class="fw-bold text-white my-2"><span class="text-warning">WEB</span> | <span
+                                    class="text-warning">GRAPHIC</span> | <span class="text-warning">APP</span> </h1>
+                            <p class="fw-bold fs-5 text-white">Your business's online presence is not just an option,
+                                it's a necessity for success in today's digital world</p>
                             <div class="homebtn d-grid gap-2 col-4">
-                                <button class="btn btn-danger fw-bold rounded-pill w-100" type="button" data-bs-toggle="modal" href="#en">Get Started </button>
+                                <button class="btn btn-danger fw-bold rounded-pill w-100" type="button"
+                                    data-bs-toggle="modal" href="#en">Get Started </button>
                             </div>
                         </div>
                     </div>
@@ -115,11 +87,15 @@
                 </div>
                 <div class="about-info mx-auto">
                     <div class="position-relative top-50 start-50 translate-middle">
-                        <p class="my-2"> <span class="fw-bold text-danger fs-3"><span class="text-primary"></> Open</span>code</span> is a leading provider of web development, graphic design,
+                        <p class="my-2"> <span class="fw-bold text-danger fs-3"><span class="text-primary"></>
+                                    Open</span>code</span> is a leading provider of web development, graphic design,
                             and app development services.</p>
-                        <p class="my-2">Our team of experienced professionals works diligently to create high-quality solutions that meet the unique needs of our clients.
-                            At Opencode, we understand the importance of delivering projects on time and within budget.</p>
-                        <p class="my-2"> Our development process is designed to ensure that we deliver exceptional results,
+                        <p class="my-2">Our team of experienced professionals works diligently to create high-quality
+                            solutions that meet the unique needs of our clients.
+                            At Opencode, we understand the importance of delivering projects on time and within budget.
+                        </p>
+                        <p class="my-2"> Our development process is designed to ensure that we deliver exceptional
+                            results,
                             while keeping our clients informed and involved throughout the entire process.</p>
                         <p class="my-2"> Whether you need a new website, a mobile app, or a complete branding overhaul,
                             Opencode has the expertise and experience to deliver the results you need.</p>
@@ -137,7 +113,8 @@
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                        <div class="service-card card h-100 collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <div class="service-card card h-100 collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                             <div class="card-body py-3">
                                 <div class="text-center fs-1">
                                     <i class="fa-solid fa-globe"></i>
@@ -150,7 +127,8 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="service-card card h-100 collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <div class="service-card card h-100 collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                             <div class="card-body py-3">
                                 <div class="text-center fs-1">
                                     <i class="fa-solid fa-pen-to-square"></i></i>
@@ -163,7 +141,9 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="service-card card h-100 collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <div class="service-card card h-100 collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
                             <div class="card-body py-3">
                                 <div class="text-center fs-1">
                                     <i class="fa-solid fa-mobile-screen-button "></i> <br>
@@ -182,10 +162,13 @@
                 <div class="accordion accordion-flush" id="accordionFlushExample">
 
                     <!-- web development -->
-                    <div class="sub-type my-3 py-5 accordion-collapse collapse accordion-body" id="flush-collapseOne" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="sub-type my-3 py-5 accordion-collapse collapse accordion-body" id="flush-collapseOne"
+                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                         <div class=" row row-cols-1 row-cols-md-4 g-3">
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('web development','customize')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('web development','customize')" data-bs-toggle="modal"
+                                    href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-code"></i> <br>
@@ -197,7 +180,9 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('web development','bootstrap')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('web development','bootstrap')" data-bs-toggle="modal"
+                                    href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-brands fa-bootstrap"></i> <br>
@@ -209,7 +194,9 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('web development','wordpress')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('web development','wordpress')" data-bs-toggle="modal"
+                                    href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-brands fa-wordpress"></i><br>
@@ -221,7 +208,8 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('web development','shopify')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('web development','shopify')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-brands fa-shopify"></i> <br>
@@ -233,7 +221,9 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('web development','Dynamic And Static')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('web development','Dynamic And Static')" data-bs-toggle="modal"
+                                    href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-globe"></i><br>
@@ -245,7 +235,9 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('web development','Template Editing')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('web development','Template Editing')" data-bs-toggle="modal"
+                                    href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-file-pen"></i>
@@ -258,7 +250,9 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('web development','Bug Fixing')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('web development','Bug Fixing')" data-bs-toggle="modal"
+                                    href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-bug"></i> <br>
@@ -270,7 +264,9 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('web development','Content upload')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('web development','Content upload')" data-bs-toggle="modal"
+                                    href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-upload"></i><br>
@@ -286,22 +282,27 @@
                     <!--  -->
 
                     <!-- Graphic Design -->
-                    <div class="sub-type my-3 py-5 accordion-collapse collapse accordion-body" id="flush-collapseTwo" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="sub-type my-3 py-5 accordion-collapse collapse accordion-body" id="flush-collapseTwo"
+                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                         <div class=" row row-cols-1 row-cols-md-4 g-3">
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Graphic Design','Resume')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('Graphic Design','Website Design')" data-bs-toggle="modal"
+                                    href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
-                                            <i class="fa-solid fa-file"></i><br>
+                                            <i class="fa-solid fa-globe"></i><br>
                                             <span class="fs-5">
-                                                Resume
+                                                Website Design
                                             </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Graphic Design','Social media post')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('Graphic Design','Social media post')" data-bs-toggle="modal"
+                                    href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-hashtag"></i> <br>
@@ -313,7 +314,9 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Graphic Design','Advertising post')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('Graphic Design','Advertising post')" data-bs-toggle="modal"
+                                    href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-rectangle-ad"></i><br>
@@ -325,7 +328,8 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Graphic Design','Poster')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('Graphic Design','Poster')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-sheet-plastic"></i> <br>
@@ -337,7 +341,9 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Graphic Design','YouTube Thumbnail')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('Graphic Design','YouTube Thumbnail')" data-bs-toggle="modal"
+                                    href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-brands fa-youtube"></i><br>
@@ -349,7 +355,8 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Graphic Design','Logo')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('Graphic Design','Logo')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-brands fa-square-pied-piper"></i>
@@ -362,7 +369,9 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Graphic Design','Business Card')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('Graphic Design','Business Card')" data-bs-toggle="modal"
+                                    href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-address-card"></i>
@@ -375,7 +384,8 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Graphic Design','Other')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('Graphic Design','Other')" data-bs-toggle="modal" href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-solid fa-ellipsis"></i><br>
@@ -391,10 +401,13 @@
                     <!--  -->
 
                     <!-- Mobile App Development -->
-                    <div class="sub-type my-3 py-5 accordion-collapse collapse accordion-body" id="flush-collapseThree" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="sub-type my-3 py-5 accordion-collapse collapse accordion-body" id="flush-collapseThree"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                         <div class=" row row-cols-1 row-cols-md-3 g-3">
                             <div class="col mx-auto">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Mobile App Development','Android')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('Mobile App Development','Android')" data-bs-toggle="modal"
+                                    href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-brands fa-android"></i><br>
@@ -406,7 +419,9 @@
                                 </div>
                             </div>
                             <div class="col mx-auto">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Mobile App Development','Hybrid apps')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('Mobile App Development','Hybrid apps')" data-bs-toggle="modal"
+                                    href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-brands fa-react"></i><br>
@@ -418,7 +433,9 @@
                                 </div>
                             </div>
                             <div class="col mx-auto">
-                                <div class="bg-light card h-100 service-sub-card" onclick="formdata('Mobile App Development','ios')" data-bs-toggle="modal" href="#stm">
+                                <div class="bg-light card h-100 service-sub-card"
+                                    onclick="formdata('Mobile App Development','ios')" data-bs-toggle="modal"
+                                    href="#stm">
                                     <div class="card-body py-3">
                                         <div class="text-center fs-1">
                                             <i class="fa-brands fa-apple"></i><br>
@@ -505,7 +522,8 @@
             <div>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
-                        <div class="card s-card" onclick="formdata('Web Development','E-commerce website')" data-bs-toggle="modal" href="#stm">
+                        <div class="card s-card" onclick="formdata('Web Development','E-commerce website')"
+                            data-bs-toggle="modal" href="#stm">
                             <img src="images/service/shoping.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">E-Commerce Website</h5>
@@ -514,7 +532,8 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card s-card" onclick="formdata('Web Development','Education and learning website')" data-bs-toggle="modal" href="#stm">
+                        <div class="card s-card" onclick="formdata('Web Development','Education and learning website')"
+                            data-bs-toggle="modal" href="#stm">
                             <img src="images/service/eductional.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">Education & Learning Website</h5>
@@ -524,7 +543,8 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card s-card" onclick="formdata('Web Development','Business Website')" data-bs-toggle="modal" href="#stm">
+                        <div class="card s-card" onclick="formdata('Web Development','Business Website')"
+                            data-bs-toggle="modal" href="#stm">
                             <img src="images/service/business.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">Business Website</h5>
@@ -534,7 +554,8 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card s-card" onclick="formdata('Web Development','Event Website')" data-bs-toggle="modal" href="#stm">
+                        <div class="card s-card" onclick="formdata('Web Development','Event Website')"
+                            data-bs-toggle="modal" href="#stm">
                             <img src="images/service/event.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">Event Website</h5>
@@ -544,7 +565,8 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card s-card" onclick="formdata('Web Development','Bloging Website')" data-bs-toggle="modal" href="#stm">
+                        <div class="card s-card" onclick="formdata('Web Development','Bloging Website')"
+                            data-bs-toggle="modal" href="#stm">
                             <img src="images/service/blogweb.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">Bloging Website</h5>
@@ -554,7 +576,8 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card s-card" onclick="formdata('Web Development','Portfolio Website')" data-bs-toggle="modal" href="#stm">
+                        <div class="card s-card" onclick="formdata('Web Development','Portfolio Website')"
+                            data-bs-toggle="modal" href="#stm">
                             <img src="images/service/portfolio.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">Portfolio Website</h5>
@@ -564,7 +587,8 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card s-card" onclick="formdata('Web Development','Personal website')" data-bs-toggle="modal" href="#stm">
+                        <div class="card s-card" onclick="formdata('Web Development','Personal website')"
+                            data-bs-toggle="modal" href="#stm">
                             <img src="images/service/personal.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">Personal Website</h5>
@@ -573,7 +597,8 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card s-card" onclick="formdata('Web Development','Information website')" data-bs-toggle="modal" href="#stm">
+                        <div class="card s-card" onclick="formdata('Web Development','Information website')"
+                            data-bs-toggle="modal" href="#stm">
                             <img src="images/service/Info.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">Information Website</h5>
@@ -583,7 +608,8 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card s-card" onclick="formdata('Web Development','Other')" data-bs-toggle="modal" href="#stm">
+                        <div class="card s-card" onclick="formdata('Web Development','Other')" data-bs-toggle="modal"
+                            href="#stm">
                             <img src="images/service/other.png" class="card-img-top s-card-img" alt="...">
                             <div class="card-body">
                                 <h5 class="s-card-footer1 card-title text-center">OTHER</h5>
@@ -607,13 +633,15 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body pt-3 px-5 pb-4">
-                    <form action="sql/insert.php" name="commonform" onsubmit="return enquire('commonform')" method="post">
+                    <form action="sql/insert.php" name="commonform" onsubmit="return enquire('commonform')"
+                        method="post">
                         <div id="commonformenname" class="mb-3">
                             <label for="" class="form-label float-start">Name</label> <span class="formerror"> </span>
                             <input type="text" class="form-control" name="name" placeholder="Enter Your Name">
                         </div>
                         <div id="commonformenphone" class="mb-3">
-                            <label for="" class="form-label float-start">Phone No</label><span class="formerror"> </span>
+                            <label for="" class="form-label float-start">Phone No</label><span class="formerror">
+                            </span>
                             <input type="tel" class="form-control" name="phone" placeholder="Enter Your Phone No">
                         </div>
                         <div id="commonformenemail" class="mb-3">
@@ -632,8 +660,10 @@
                             </select>
                         </div>
                         <div id="commonformenproject" class="mb-3">
-                            <label for="" class="form-label float-start">About Project</label> <span class="formerror"> </span>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Write Something About Project" name="project-info" rows="3"></textarea>
+                            <label for="" class="form-label float-start">About Project</label> <span class="formerror">
+                            </span>
+                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                placeholder="Write Something About Project" name="project-info" rows="3"></textarea>
                         </div>
                         <div class="d-grid gap-2">
                             <button class="btn btn-danger fw-bold" type="submit" name="enbtnsubmit">SUBMIT</button>
@@ -654,13 +684,15 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body pt-3 px-5 pb-4">
-                    <form action="sql/insert.php" name="allserviceform" onsubmit="return enquire('allserviceform')" method="post">
+                    <form action="sql/insert.php" name="allserviceform" onsubmit="return enquire('allserviceform')"
+                        method="post">
                         <div id="allserviceformenname" class="mb-2">
                             <label for="" class="form-label float-start">Name</label> <span class="formerror"> </span>
                             <input type="text" class="form-control" name="name" placeholder="Enter Your Name">
                         </div>
                         <div id="allserviceformenphone" class="mb-2">
-                            <label for="" class="form-label float-start">Phone No</label><span class="formerror"> </span>
+                            <label for="" class="form-label float-start">Phone No</label><span class="formerror">
+                            </span>
                             <input type="tel" class="form-control" name="phone" placeholder="Enter Your Phone No">
                         </div>
                         <div id="allserviceformenemail" class="mb-2">
@@ -672,8 +704,10 @@
                             <input type="hidden" name="subtype" id="subtype">
                         </div>
                         <div id="allserviceformenproject" class="mb-2">
-                            <label for="" class="form-label float-start">About Project</label> <span class="formerror"> </span>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Write Something About Project  " name="project-info" rows="3"></textarea>
+                            <label for="" class="form-label float-start">About Project</label> <span class="formerror">
+                            </span>
+                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                placeholder="Write Something About Project  " name="project-info" rows="3"></textarea>
                         </div>
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-danger fw-bold" name="allenbtnsubmit">SUBMIT</button>
@@ -701,7 +735,8 @@
                         </div>
                     </div>
                     <div class="cform mx-auto my-1" id="contact-form">
-                        <form class="position-relative top-50 start-50 translate-middle" action="sql/insert.php" name="myForm" onsubmit="return validateForm()" method="post">
+                        <form class="position-relative top-50 start-50 translate-middle" action="sql/insert.php"
+                            name="myForm" onsubmit="return validateForm()" method="post">
                             <div class="row g-2">
                                 <div class="col-md" id="fname">
                                     <div class="form-floating ">
@@ -729,7 +764,8 @@
                                 <span class="formerror"> </span>
                             </div>
                             <div class="form-floating mb-2" id="msg">
-                                <textarea class="form-control" id="floatingTextarea2" style="height: 100px" name="msg"></textarea>
+                                <textarea class="form-control" id="floatingTextarea2" style="height: 100px"
+                                    name="msg"></textarea>
                                 <label for="floatingTextarea2">Message</label>
                                 <span class="formerror"> </span>
                             </div>
@@ -819,16 +855,44 @@
     </footer>
     <!-- Footer -->
 
+    <?php
+    error_reporting(0);
+
+    $status = $_GET['status'];
+    $alertmsg = $_GET['msg'];
+    if ($status == 2) {
+    ?>
+    <script>
+    swal("success", "<?php echo $alertmsg; ?>", "success")
+        .then((value) => {
+            window.location.replace("index.php");
+        });
+    </script>
+    <?php
+    } else if ($status == 3) {
+    ?>
+    <script>
+    swal("Failed", "Something Wrong!", "error").then((value) => {
+        window.location.replace("index.php");
+    });
+    </script>
+    <?php
+    }
+    ?>
+
+
 
     <!-- javascript -->
     <script src="js/script.js"></script>
 
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
